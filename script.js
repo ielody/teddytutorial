@@ -78,3 +78,27 @@ const bullFrogs = [
 for(let i = 0; i < bullFrogs.length; i++) {
   console.log(`${bullFrogs[i].name} is located in ${bullFrogs[i].location} and is ${bullFrogs[i].isThreatened}`)
 }
+
+
+//nested loop
+let animals = [['hare', 'cat'], ['rabbit', 'squirrel']]
+
+// for(let i = 1; i < 6; i++) {
+//   console.log('outer loops:' + i)
+//   for(let j = 1; j <= 5; j++) {
+//     console.log('inner loop:' + j);
+//     for(let l = 1; l <= 3; l++) {
+//       console.log('inner inner loop:' + j);
+//     }
+//   }
+// }
+
+for(let i = 0; i < animals.length; i++) {
+  let row = animals[i]
+  for(let j = 0; j <row.length; j++)
+  console.log(row[j])
+}
+
+for(let i = 0; i < animals.length; i++) {
+  console.log(animals[i])
+}
